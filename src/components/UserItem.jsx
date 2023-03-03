@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import noPhoto from '../common/img/user.jpg'
 
 const UserItem = ({ username, userPhoto }) => {
-  return <Link to={`/`}>
+  return <Link to={`/people`}>
     <div className='flex items-center flex-col p-2 rounded-md'>
       <img 
         alt={username}

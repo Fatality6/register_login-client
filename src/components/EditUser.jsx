@@ -1,7 +1,7 @@
 import { Dialog } from '@headlessui/react'
 import React from 'react'
 
-export const EditUser = ({ isOpen, setIsOpen, username, setUsername, birth, setPassword, setImage, handlerSubmit }) => {
+export const EditUser = ({ isOpen, setIsOpen, username, setUsername, setPassword, image, setImage, handlerSubmit }) => {
   return (
     <div>
       <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
@@ -34,6 +34,10 @@ export const EditUser = ({ isOpen, setIsOpen, username, setUsername, birth, setP
                 Изменить фото
                 <input type="file" className="hidden" onChange={(e) => setImage(e.target.files[0])} />
               </label>
+              {/* отображение выбранной картинки перед отправкой*/}
+              <div className="flex justify-center items-center object-cover py-2">
+                {image && <img src={URL.createObjectURL(image)} alt={image.name} className='h-20' />}
+              </div>
               <div className='flex justify-center mt-4'>
                 <button
                   onClick={handlerSubmit}
