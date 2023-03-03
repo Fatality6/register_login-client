@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className='flex py-4 px-4 justify-between items-center'>
       <div></div>
-      <ul className="flex gap-8">
+      <ul className="flex gap-8 ml-16">
         <li>
           <NavLink 
             to={'/people'} 
