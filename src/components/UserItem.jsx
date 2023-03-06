@@ -12,7 +12,7 @@ const UserItem = ({ username, userPhoto, birthdate, setIsOpen, setActiveName, se
       <img 
         alt={username}
         className='w-25 rounded-[50%] p-1 hover:shadow-xl hover:bg-white duration-300'
-        src={userPhoto?`http://localhost:8080/${userPhoto}`:noPhoto}/>
+        src={userPhoto?`https://register-login-server.onrender.com/${userPhoto}`:noPhoto}/>
       <span className='mt-4'>{username}</span>
     </div>)
 }

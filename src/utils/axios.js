@@ -1,8 +1,9 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL: 'http://localhost:8080/api'
+    baseURL: 'https://register-login-server.onrender.com/api'
 })
+//https://register-login-server.onrender.com
 
 //с каждым запросом на сервер из localStorage отправляется токен
 instance.interceptors.request.use((config)=>{

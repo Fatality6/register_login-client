@@ -18,7 +18,7 @@ const Info = ({isOpen, setIsOpen, activeName, activeBirthdate, activeImage}) => 
                     <form onSubmit={(e) => e.preventDefault()}>
                         <div>
                             <img 
-                                src={activeImage?`http://localhost:8080/${activeImage}`:noPhoto}
+                                src={activeImage?`https://register-login-server.onrender.com/${activeImage}`:noPhoto}
                                 className='w-[350px]' 
                                 alt="1" />
                         </div>

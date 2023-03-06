@@ -48,7 +48,7 @@ export const AccountPage = () => {
         className='flex-row justify-center text-gray-600 p-3 mx-auto h-[450px] w-[400px] mt-5 bg-slate-300 rounded-md hover:shadow-xl hover:bg-slate-200 transition duration-100 ease-in-out cursor-pointer '
         onClick={()=>setIsOpen(true)}>
           <img 
-            src={user.userPhoto?`http://localhost:8080/${user.userPhoto}`:noPhoto}
+            src={user.userPhoto?`https://register-login-server.onrender.com/${user.userPhoto}`:noPhoto}
             className='w-full'
             alt={user.username} />
           <div className='mt-2'>{user.username}</div>
